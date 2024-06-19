@@ -1,0 +1,9 @@
+services:
+  web-testing:
+    build: .
+    ports:
+      - "9000:5000"
+    environment:
+      - TEST=something
+  redis-testing:
+    image: "redis:alpine"
